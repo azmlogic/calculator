@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Calculator #1 | azmlogic</title>
-</head>
-<body>
-    
-    
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="logo">
+        <svg
+          width="130"
+          height="30"
+          viewBox="0 0 360 80"
+          aria-label="azmlogic logo"
+          role="img"
+        >
+          <text
+            x="40%"
+            y="50%"
+            dominant-baseline="middle"
+            text-anchor="middle"
+            font-family="Segoe UI, system-ui, sans-serif"
+            font-size="60"
+            font-weight="700"
+            fill="url(#grad)"
+            letter-spacing="1"
+          >
+            azmlogic
+          </text>
+          <defs>
+            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#84ffff" />
+              <stop offset="100%" stop-color="#66ffb3" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div id="display">0</div>
+      <div class="buttons">
+        <button data-number="7">7</button>
+        <button data-number="8">8</button>
+        <button data-number="9">9</button>
+        <button data-action="operator" data-op="÷">÷</button>
+
+        <button data-number="4">4</button>
+        <button data-number="5">5</button>
+        <button data-number="6">6</button>
+        <button data-action="operator" data-op="x">x</button>
+
+        <button data-number="1">1</button>
+        <button data-number="2">2</button>
+        <button data-number="3">3</button>
+        <button data-action="operator" data-op="+">+</button>
+
+        <button data-number="0">0</button>
+        <button data-number=".">.</button>
+        <button data-action="equals">=</button>
+        <button data-action="clear">C</button>
+      </div>
+    </div>
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
